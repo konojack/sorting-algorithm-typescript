@@ -8,10 +8,8 @@ const charactersCollection = new CharactersCollection(
   'jDSKJjdjSjNXNFbfieUWUEIRooROWIWPERdksdklfa'
 );
 
-const sorterNumbers = new Sorter(numbersCollection);
-const sorterChars = new Sorter(charactersCollection);
-sorterNumbers.sort();
-sorterChars.sort();
+numbersCollection.sort();
+charactersCollection.sort();
 console.log(numbersCollection.data);
 console.log(charactersCollection.data);
 
@@ -20,6 +18,5 @@ linkedList.add(5);
 linkedList.add(6);
 linkedList.add(1);
 linkedList.add(2);
-const sorterList = new Sorter(linkedList);
-sorterList.sort();
+linkedList.sort();
 console.log(linkedList.print());
